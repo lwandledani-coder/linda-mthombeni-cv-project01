@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
     .proPicture{
         position: absolute; top: 0px; left: 450px; 
         border: 1px solid black; 
         height: 190px; width: 200px; border-radius: 100px; object-fit: cover;
     }
+
     .squareButton{
         list-style: square; list-style-position: inside;
     }
+
     .adjustPS{
         text-align: justify;
     }
