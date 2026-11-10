@@ -231,7 +231,7 @@ a:hover {
     }
 
     h3 {
-        margin-top: 0.25rem;
+        margin-top: 0.35rem;
     }
 
     a {
@@ -268,3 +268,43 @@ a:hover {
         text-align: center;
     }
 }
+
+/* Address */
+.addresses {
+  display: grid;
+  /* gap: 10px; */
+  gap: 6px;
+}
+ 
+.address {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  line-height: 1.45;
+  font-size: 0.95rem;
+  background: #f7f8fa;
+  border-left: 4px solid transparent;
+}
+ 
+.address__icon {
+  flex: 0 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+ 
+.address__label {
+  flex: 0 0 auto;
+  font-weight: 600;
+  color: #1f2937;
+}
+ 
+.address__label::after { content: ":"; }
+ 
+.address__text { color: #4b5563; }
+ 
+/* Different accent per address type */
+.address--home     { border-left-color: #2563eb; }  /* blue  */
+.address--physical { border-left-color: #16a34a; }  /* green */
